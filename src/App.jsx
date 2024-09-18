@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "./components/pages/Header";
+import Mousemove from "./components/mousemove";
 
 const App = () => {
   return (
     <>
-      <div className="w-full h-screen bg-black text-white">
-        <h1 className="text-5xl font-extrabold font-mono">React App</h1>
-      </div>
+      <Mousemove />
+      <Header />
     </>
   );
 };

@@ -1,0 +1,172 @@
+header {
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+    font-family: "rr";
+    /* cursor: none; */
+  }
+  header nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    cursor: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    text-transform: uppercase;
+  }
+  header nav .navcont {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--pri);
+    color: var(--main);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    transition: all cubic-bezier(0.33, 1, 0.22, 1) 1.5s;
+  }
+  header nav .navcont .navleft {
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+  }
+  header nav .navcont .navright {
+    width: 80%;
+    gap: 5px;
+    display: flex;
+    float: right;
+  }
+  header nav .navcont .navright i {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  header nav .navcont .navleft i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  header nav .navcont:hover {
+    width: 200px;
+  }
+  
+  header nav .navcont .navright .g:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    scale: 1.2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  header nav .navcont .navright .i:hover {
+    background-color: #b986cb;
+    border-radius: 50%;
+    color: #fff;
+    scale: 1.2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  header nav .navcont .navright .f:hover {
+    background-color: #000d5f;
+    color: #fff;
+    border-radius: 50%;
+    scale: 1.2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  header nav .navcont .navright .l:hover {
+    background-color: #0088dd;
+    border-radius: 50%;
+    color: #fff;
+    scale: 1.2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  
+  /* menu */
+  
+  .menu {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: 1;
+    cursor: default;
+    background-color: var(--main);
+    color: var(--pri);
+    text-align: center;
+  }
+  .menu .menuicon {
+    width: 100vw;
+  }
+  .menu .menuicon i {
+    font-size: 4vw;
+    /* padding: 1vw; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  .menu .menubody {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .menubody h1 {
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: "rl";
+    /* letter-spacing: -50px; */
+    padding: 1vw;
+    color: var(--pri);
+    opacity: 0;
+    /* font-style: italic; */
+    position: relative;
+    width: max-content;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  .menu .menubody h1::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    right: 0;
+    /* bottom: 0; */
+    transform-origin: center;
+    background-color: var(--sec);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  
+  .menu .menubody h1::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    transform-origin: center;
+    background-color: var(--sec);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  }
+  
+  .menu .menubody h1:hover {
+    color: var(--sec);
+    cursor: pointer;
+  }
+  .menu .menubody h1:hover::before {
+    width: 100%;
+  }
+  .menu .menubody h1:hover::after {
+    width: 100%;
+  }
+  
+  .menu .menuicon .close:hover {
+    background-color: var(--pri);
+    border-radius: 50%;
+    color: var(--sec);
+    cursor: pointer;
+  }
+  
