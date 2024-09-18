@@ -1,23 +1,24 @@
 :root {
-    --main: #000;
-    --pri: #ecf3f9;
-    --sec: #a9a9a9;
-  }
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  --main: #111;
+  --pri: #ecf3f9;
+  --sec: #a9a9a9;
+  --spe: #001d38;
 }
-html,body{
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    color: #fff;
-    position: relative;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  /* color: #fff; */
+  position: relative;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
