@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "SofadiOne";
+  src: url(../public/font/Sofadi_One/SofadiOne-Regular.ttf);
+}
+@font-face {
+  font-family: "ZenMaruGothic-r";
+  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf);
+}
+@font-face {
+  font-family: "ZenMaruGothic-b";
+  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Bold.ttf);
+}
+@font-face {
+  font-family: "ZenMaruGothic-m";
+  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Medium.ttf);
+}
+@font-face {
+  font-family: "ZenMaruGothic-l";
+  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Light.ttf);
+}
+@font-face {
+  font-family: "ZenMaruGothic-bk";
+  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Black.ttf);
+}
+
 :root {
   --main: #111;
   --pri: #ecf3f9;
@@ -17,6 +42,8 @@ body {
   background-color: #000;
   /* color: #fff; */
   position: relative;
+}
+main {
 }
 
 @tailwind base;

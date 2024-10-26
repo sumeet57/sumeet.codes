@@ -100,10 +100,11 @@ header nav .navcont .navright .l:hover {
   justify-content: space-between;
   align-items: center;
   cursor: default;
+  /* border-radius: 50%; */
   background-color: var(--spe);
   color: var(--pri);
   text-align: center;
-  transform: translateY(-130%) rotate(20deg);
+  transform: translateY(-130%) rotate(-10deg);
 }
 .menu .menuicon {
   width: 100%;

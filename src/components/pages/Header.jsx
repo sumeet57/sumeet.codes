@@ -16,18 +16,22 @@ const Header = () => {
   const openMenu = () => {
     if (!flag) {
       gsap.to(".menu", {
-        duration: 0.5,
-        transform: "translateY(0%) rotate(0deg)",
+        transform: "translateY(-0%) rotate(-0deg) scaleY(1)",
+        borderBottomLeftRadius: 0,
         opacity: 1,
-        ease: "power2.inout",
+        scaleY: 1,
+        duration: 0.5,
+        ease: "sine.out",
       });
       setFlag(true);
     } else {
       gsap.to(".menu", {
         duration: 0.5,
         opacity: 0,
-        transform: "translateY(-130%) rotate(-20deg)",
-        ease: "power2.inout",
+        scaleY: 0.5,
+        borderBottomLeftRadius: "50%",
+        transform: "translateY(-130%) rotate(-10deg) scaleY(0.5)",
+        ease: "sine.out",
       });
       setFlag(false);
     }
@@ -36,7 +40,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav>
+        <nav className="fixed w-full h-fit py-2">
           <div className="navcont">
             <div onClick={openMenu} className="navleft">
               <RiMenuLine />
@@ -56,7 +60,7 @@ const Header = () => {
               </i>
             </div>
           </div>
-          <div className="menu">
+          <div className="menu overflow-hidden">
             <div
               onClick={openMenu}
               className="close absolute right-0 top-0 p-2 bg-slate-400 m-2 rounded-full bg-[var(--main)] text-5xl"
