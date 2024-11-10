@@ -4,32 +4,44 @@ const Page1 = () => {
   return (
     <>
       <div
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255, 255, 255, 0.1) 0.5px, transparent 0.5px), linear-gradient(to right, rgba(255, 255, 255, 0.1) 0.5px, transparent 0.5px)",
-          backgroundSize: "180px 180px",
-          backgroundColor: "#261722",
-        }}
-        className="page1 w-full h-screen relative flex justify-center items-center"
+        className="w-[90%] h-[100%] flex gap-4 font-[regular] bg-[var(--main)] text-[var(--pri)]
+      justify-center items-center pt-20"
       >
-        {/* <img
-          className="w-full h-full object-cover opacity-30 blur-sm absolute top-0 left-0"
-          src="./back.png"
-          alt="Background"
-        /> */}
-        <div className="cont w-full leading-tight text-white flex justify-center items-center flex-col pt-10">
-          <h1
-            style={{ transform: "scaleX(1)", fontFamily: "SofadiOne" }}
-            className="text-8xl uppercase px-4 max-lg:text max-sm:text-[15vw]"
-          >
-            sumeet
-          </h1>
-          <h2
-            style={{ transform: "scaleX(0.75)" }}
-            className="text-8xl uppercase px-4 max-sm:text-[15vw]"
-          >
-            fullstack
-          </h2>
+        <div className="w-[68%] h-[100%] flex justify-center flex-col gap-4">
+          <div className="flex gap-4 h-[50%]">
+            <div className="profile-card w-[68%] h-[100%] bg-[var(--sec)] p-4 rounded-s-[30px] rounded-e-[30px] overflow-hidden">
+              <div className="text1 w-[100%] h-[40%] flex justify-center items-center">
+                <div className="img w-[30%] h-[100%] flex justify-center items-center">
+                  <img src="/avatar.png" className="w-[100%] h-[100%] object-contain" alt="pic" />
+                </div>
+                <div className="name w-[70%] h-[100%] flex items-center">
+                  <p className="text-heading font-[heading-r] capitalize p-2 font-extrabold">sumeet umbalkar</p>
+                </div>
+              </div>
+              <div className="text2">
+                <p className="text-normal capitalize pt-4 p-2 font-medium text-center">
+                  Full-stack developer from Mumbai passionate about coding,
+                  creating dynamic websites, and solving complex algorithms.
+                  Always exploring new tech and striving for clean, efficient
+                  code
+                </p>
+              </div>
+            </div>
+            <div className="theme w-[28%] h-[100%] bg-[var(--sec)] rounded-s-[30px] rounded-e-[30px]">
+              theme
+            </div>
+          </div>
+          <div className="flex gap-4 h-[50%]">
+            <div className="timezone w-[28%] h-[100%] bg-[var(--sec)] rounded-full">
+              timezone
+            </div>
+            <div className="social-links w-[68%] h-[100%] bg-[var(--sec)] rounded-s-[30px] rounded-e-[30px]">
+              social links
+            </div>
+          </div>
+        </div>
+        <div className="w-[28%] h-[100%]">
+          <div className="skills w-[100%] h-[100%] bg-[var(--sec)] rounded-s-[30px] rounded-e-[30px]"></div>
         </div>
       </div>
     </>

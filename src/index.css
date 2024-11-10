@@ -1,33 +1,25 @@
 @font-face {
-  font-family: "SofadiOne";
-  src: url(../public/font/Sofadi_One/SofadiOne-Regular.ttf);
+  font-family: 'regular';
+  src: url(/font/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: "ZenMaruGothic-r";
-  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf);
+  font-family: 'regular-i';
+  src: url(/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: "ZenMaruGothic-b";
-  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Bold.ttf);
+  font-family: 'heading-b';
+  src: url(/font/Ubuntu/Ubuntu-Bold.ttf);
 }
 @font-face {
-  font-family: "ZenMaruGothic-m";
-  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Medium.ttf);
+  font-family: 'heading-r';
+  src: url(/font/Ubuntu/Ubuntu-Regular.ttf);
 }
-@font-face {
-  font-family: "ZenMaruGothic-l";
-  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Light.ttf);
-}
-@font-face {
-  font-family: "ZenMaruGothic-bk";
-  src: url(../public/font/Zen_Maru_Gothic/ZenMaruGothic-Black.ttf);
-}
-
 :root {
   --main: #111;
-  --pri: #ecf3f9;
-  --sec: #a9a9a9;
-  --spe: #001d38;
+  --pri: #ffffff;
+  --sec: #414141;
+  --normal: 1.4vw;
+  --heading: 2vw;
 }
 
 * {

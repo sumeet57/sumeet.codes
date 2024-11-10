@@ -8,7 +8,9 @@ const App = () => {
     <>
       <Mousemove />
       <Header />
-      <main>
+      <main className="flex justify-center
+      items-center h-screen bg-[var(--main)]
+      ">
         <Page1 />
       </main>
     </>
