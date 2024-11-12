@@ -15,9 +15,9 @@
   src: url(/font/Ubuntu/Ubuntu-Regular.ttf);
 }
 :root {
-  --main: #111;
+  --main: #000;
   --pri: #ffffff;
-  --sec: #414141;
+  --sec: #1A1615;
   --normal: 1.4vw;
   --heading: 2vw;
 }

@@ -4,7 +4,7 @@ const Page1 = () => {
   return (
     <>
       <div
-        className="w-[90%] h-[100%] flex gap-4 font-[regular] bg-[var(--main)] text-[var(--pri)]
+        className="w-[90%] h-[100%] flex  font-[regular] bg-[var(--main)] text-[var(--pri)]
       justify-center items-center pt-20"
       >
         <div className="w-[68%] h-[100%] flex justify-center flex-col gap-4">
@@ -15,11 +15,11 @@ const Page1 = () => {
                   <img src="/avatar.png" className="w-[100%] h-[100%] object-contain" alt="pic" />
                 </div>
                 <div className="name w-[70%] h-[100%] flex items-center">
-                  <p className="text-heading font-[heading-r] capitalize p-2 font-extrabold">sumeet umbalkar</p>
+                  {/* <p className="text-heading font-[heading-r] capitalize p-2 font-extrabold">sumeet umbalkar</p> */}
                 </div>
               </div>
               <div className="text2">
-                <p className="text-normal capitalize pt-4 p-2 font-medium text-center">
+                <p className="text-normal capitalize pt-4 p-2 font-light text-left">
                   Full-stack developer from Mumbai passionate about coding,
                   creating dynamic websites, and solving complex algorithms.
                   Always exploring new tech and striving for clean, efficient
