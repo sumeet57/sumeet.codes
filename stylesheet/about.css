@@ -1,0 +1,41 @@
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .blur1{
+    box-shadow: 15px 1px 30px 20px var(--pri);
+  }
+  .blur2{
+    box-shadow: -15px 1px 30px 20px var(--pri);
+  }
+
+
+  .animate-scroll {
+    display: flex;
+    gap: 1px;
+    animation: scroll 15s linear infinite;
+    /* background: red; */
+    width: max-content;
+  }
+
+
+  .tech-list {
+    display: flex;
+    gap: 1px;
+  }
+
+  .tech-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 120px;
+  }

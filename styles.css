@@ -1,0 +1,31 @@
+:root{
+--pri : #09090B;
+--sec : #E5E5E5;
+--extra : #F97316;
+--homepageBg : linear-gradient(to bottom, #252525, #09090B);
+
+/* text  */
+--textH : 6vw;
+--textSH : 4vw;
+--textR : 2vw;
+--textL : 1.5vw;
+};
+
+@font-face {
+    font-family: 'contentR';
+    src: url(./font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'thinR';
+    src: url(./font/PoiretOne-Regular.ttf);
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'contentR';
+    background-color: var(--pri);
+    color: var(--sec);
+}

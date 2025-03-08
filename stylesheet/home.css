@@ -1,0 +1,73 @@
+#home{
+    background: var(--homepageBg);
+    color: var(--sec);
+    z-index: 1;
+}
+
+#home h1{
+    font-size: var(--textH);
+    transition: all linear 0.5s;
+}
+#home h3{
+    font-size: var(--textL);
+    /* color: var(--extra); */
+}
+#home h4{
+    font-size: var(--textR);
+}
+
+#home h3 span{
+    color: var(--extra);
+}
+
+#home .extracont .profile-card{
+    font-family: thinR;
+    background-color: var(--sec);
+    color: var(--pri);
+}
+#home .extracont .profile-card h2{
+    font-size: var(--textR);
+}
+#home .extracont .profile-card p{
+    font-size: var(--textL);
+}
+#home .extracont .profile-card blockquote{
+    font-size: var(--textL);
+}
+#home .extracont .connectBt{
+    background-color: var(--extra);
+    color: var(--sec);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: var(--textL);
+    font-weight: 800;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+@media (max-width: 768px){
+    :root{
+        --textH: 10vw;
+        --textR: 1.2rem;
+        --textL: 3vw;
+    }
+}
+
+@media (max-width: 480px){
+    :root{
+        --textH: 15vw;
+        --textR: 1rem;
+        --textL: 4vw;
+    }
+    #home{
+        padding: 5px;
+    }
+    #home .cont{
+        padding: 5px;
+    }
+    #home .cont .textcont{
+        padding: 5px;
+    }
+    
+}

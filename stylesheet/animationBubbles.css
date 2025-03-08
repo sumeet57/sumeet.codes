@@ -1,0 +1,109 @@
+.hero1, .hero2 {
+    width: 300px;  /* Ensure a visible size */
+    height: 300px; /* Ensure a visible size */
+    position: absolute;
+    filter: blur(30px);
+    z-index: -1; /* Move behind content */
+}
+
+
+.hero1 {
+    top: 30%;
+    left: -20%;
+}
+
+.hero2 {
+    right: -10%;
+    bottom: 60%;
+}
+
+.hero1 div, .hero2 div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero1 div{
+    width: 100px;
+    height: 100px;
+}
+.hero2 div{
+    width: 100px;
+    height: 100px;
+}
+
+/* Adjust Animations to Maintain Visibility */
+/* Hero1 - Even uses boxAni1, Odd uses boxAni2 */
+.hero1 div:nth-child(even) {
+    background-color: var(--extra);
+    opacity: 0.4;
+    animation: boxAni1 22s cubic-bezier(0.65, 0, 0.35, 1) infinite alternate;
+    box-shadow: var(--extra) 0px 0px 70px 50px;
+}
+
+.hero1 div:nth-child(odd) {
+    background-color: var(--extra);
+    opacity: 0.4;
+    animation: boxAni2 18s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+    box-shadow: var(--extra) 0px 0px 70px 50px;
+}
+
+/* Hero2 - Reverse the animations */
+.hero2 div:nth-child(even) {
+    background-color: var(--extra);
+    opacity: 0.4;
+    animation: boxAni2 20s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+    box-shadow: var(--extra) 0px 0px 70px 50px;
+}
+
+.hero2 div:nth-child(odd) {
+    background-color: var(--extra);
+    opacity: 0.4;
+    animation: boxAni1 24s cubic-bezier(0.65, 0, 0.35, 1) infinite alternate;
+    box-shadow: var(--extra) 0px 0px 70px 50px;
+}
+
+
+/* Hero 1 - Circular & Smooth */
+@keyframes boxAni1 {
+    0%   { transform: translate(10%, 10%); }
+    25%  { transform: translate(80%, 30%); }
+    50%  { transform: translate(40%, 50%); }
+    75%  { transform: translate(60%, 20%); }
+    100% { transform: translate(10%, 10%); } /* Smooth loop */
+}
+
+@keyframes boxAni2 {
+    0%   { transform: translate(20%, 70%); }
+    25%  { transform: translate(60%, 50%); }
+    50%  { transform: translate(40%, 75%); }
+    75%  { transform: translate(15%, 30%); }
+    100% { transform: translate(20%, 70%); } /* Smooth loop */
+}
+
+@media (max-width: 768px){
+    .hero1 {
+        top: 10%;
+        left: -50%;
+    }
+    
+    .hero2 {
+        right: -10%;
+        bottom: 90%;
+    }
+}
+@media (max-width: 500px){
+    .hero1 {
+        top: 10%;
+        left: -70%;
+    }
+    
+    .hero2 {
+        right: -10%;
+        bottom: 90%;
+    }
+    
+}
