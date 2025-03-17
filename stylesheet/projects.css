@@ -1,0 +1,13 @@
+#projects{
+    font-family: thinR;
+}
+
+#projects .cont h3{
+    font-size: var(--textR);
+}
+#projects .cont p{
+    font-size: var(--textL);
+}
+#projects .cont button{
+    font-size: var(--textL);
+}

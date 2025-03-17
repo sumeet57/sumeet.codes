@@ -12,6 +12,7 @@
 
     <script src="javascripts/header.js"></script>
     <script src="javascripts/home.js"></script>
+    <script src="javascripts/projects.js"></script>
 
     <!-- tailwind css -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -27,12 +28,15 @@
     <link rel="stylesheet" href="./stylesheet/home.css" />
     <link rel="stylesheet" href="./stylesheet/animationBubbles.css" />
     <link rel="stylesheet" href="./stylesheet/about.css" />
+    <link rel="stylesheet" href="./stylesheet/projects.css" />
 
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="w-full h-fit px-5 py-5 flex justify-start items-center fixed z-90">
+      <nav
+        class="w-full h-fit px-5 py-5 flex justify-start items-center fixed z-90"
+      >
         <div
           class="iconCont bg-[var(--extra)] w-10 h-10 rounded-full font-medium grid place-items-center"
         >
@@ -82,10 +86,14 @@
         <div class="hero1">
           <div class="h1b h1b1"></div>
           <div class="h1b h1b2"></div>
+          <div class="h1b h1b3"></div>
+          <div class="h1b h1b4"></div>
         </div>
         <div class="hero2">
           <div class="h2b h2b1"></div>
           <div class="h2b h2b2"></div>
+          <div class="h2b h2b3"></div>
+          <div class="h2b h2b4"></div>
         </div>
 
         <div class="cont w-full h-full flex p-5">
@@ -94,14 +102,12 @@
             class="textcont md:w-[60%] w-full flex flex-col justify-center items-start gap-4 p-8"
           >
             <span class="overflow-hidden">
-              <h1
-              class="font-[thinR] uppercase py-3 tracking-wide animate-fadeIn"
-            >
-              Im, Sumeet
-            </h1>
+              <h1 class="uppercase py-3 animate-fadeIn tracking-tighter">
+                Im, Sumeet
+              </h1>
             </span>
             <span class="overflow-hidden">
-              <h3 class="font-[thinR] leading-relaxed italic">
+              <h3 class="font-[contentR] italic">
                 <span> ❝ </span>Animating the web 🚀, powering it with MERN ⚙️,
                 solving through DSA 🔍<span> ❞ </span>
               </h3>
@@ -109,84 +115,44 @@
           </div>
 
           <!-- Right Extra Content - Profile Card -->
-          <div
-            class="extracont w-[40%] hidden md:flex items-center justify-center"
-          >
+          <div class="extracont w-[40%] items-center justify-center hidden md:flex">
             <div
-              class="profile-card shadow-lg p-6 rounded-xl border border-gray-200 text-center w-[80%]"
+              class="profile-card shadow-lg p-6 rounded-xl"
             >
-              <!-- Profile Image -->
-              <div
-                class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-gray-300"
-              >
-                <img
-                  src="./images/avatar.png"
-                  alt="Sumeet"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <!-- Name & Role -->
-              <h2 class="font-semibold mt-4">Sumeet Umbalkar</h2>
-
-              <!-- Current Status -->
-              <p class="text-gray-900 mt-3 font-bold">💼 Freelancing</p>
-
-              <!-- Quote -->
-              <blockquote
-                class="text-orange-700 italic font-[contentR] text-lg mt-2"
-              >
-                "A day without learning is a day wasted."
-              </blockquote>
-
               <!-- Social Icons -->
-              <div class="flex justify-center gap-4 mt-4">
-                <a
-                  href="https://github.com/yourgithub"
-                  target="_blank"
-                  class="text-3xl p-2 bg-black rounded-xl"
+              <div class="flex flex-col justify-center gap-4 mt-4">
+                <button
+                  class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-green-500 hover:before:[box-shadow:_20px_20px_20px_30px_#2ecc71] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-green-500 relative bg-white h-16 w-64 border text-left p-3 text-black text-xl font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-orange-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-pink-500 after:right-8 after:top-3 after:rounded-full after:blur-lg"
                 >
-                  <i class="ri-github-fill text-gray-100"></i>
-                </a>
-                <a
-                  href="https://linkedin.com/in/yourlinkedin"
-                  target="_blank"
-                  class="text-3xl p-2 bg-black rounded-xl"
-                >
-                  <i class="ri-linkedin-box-fill text-blue-600"></i>
-                </a>
-                <a
-                  href="https://twitter.com/yourtwitter"
-                  target="_blank"
-                  class="text-3xl p-2 bg-black rounded-xl"
-                >
-                  <i class="ri-instagram-line text-purple-400"></i>
-                </a>
-              </div>
+                  Github
+                </button>
 
-              <!-- Let's Connect Button -->
-              <a
-                href="mailto:your-email@example.com"
-                class="connectBt mt-4 inline-block text-white px-5 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105"
-              >
-                Let's Connect
-              </a>
+                <button
+                  class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-green-500 hover:before:[box-shadow:_20px_20px_20px_30px_#2ecc71] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-green-500 relative bg-blue-800 h-16 w-64 border text-left p-3 text-white text-xl font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-orange-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-pink-500 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+                >
+                  Linkedin
+                </button>
+                <button
+                  class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-green-500 hover:before:[box-shadow:_20px_20px_20px_30px_#2ecc71] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-green-500 relative bg-purple-400 h-16 w-64 border text-left p-3 text-black text-xl font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-orange-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-pink-500 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+                >
+                  Instagram
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-  
-
       <!-- about -->
       <section
+        id="about"
         class="w-full h-screen bg-[var(--pri)] text-[var(--sec)] flex justify-center items-center"
       >
         <div
           class="part1 w-full h-screen flex flex-col justify-evenly items-center"
         >
           <div
-            class="text-[30px] w-[80%] text-center flex justify-center items-center flex-wrap font-[thinR] tracking-[4px] font-bold p-5"
+            class="textcont w-full md:w-[80%] text-center flex justify-center items-center flex-wrap font-[thinR] tracking-[4px] font-bold p-5"
           >
             I build modern web applications 🚀, seamlessly blending creative
             animation 💫 with powerful backends ⚙️. Proficient in GSAP, Framer
@@ -197,16 +163,16 @@
           </div>
 
           <div
-            class="w-[60%] mainScrollCont overflow-hidden bg-[var(--pri)] relative flex scale-80"
+            class="w-full mainScrollCont overflow-hidden bg-[var(--pri)] relative flex scale-100 md:scale-80"
           >
             <div class="blur1 py-1 px-4 bg-[var(--pri)] z-1 scale-120"></div>
-            <div class="flex w-max animate-scroll">
+            <div class="flex w-full animate-scroll">
               <!-- Duplicate the items for seamless looping -->
               <div class="tech-list flex">
                 <p class="tech-item">
                   <span>
                     <svg
-                      class="w-[60px] h-[60px] text-blue-400 dark:text-blue-400"
+                      class="w-[60px] h-[60px] text-blue-400"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -757,24 +723,108 @@
       <!-- project -->
       <section
         id="projects"
-        class="w-full h-screen bg-[var(--pri)] flex justify-center items-center"
+        class="w-full h-fit bg-[var(--pri)] flex justify-center items-center flex-col"
       >
-        <div class="cont w-full h-full flex flex-col">
-          <div class="list w-full flex">
-            <div class="part1">
-              <h3>Tambola</h3>
-              <p>- multiplayer game</p>
-            </div>
-            <div class="part2 hidden"></div>
-          </div>
+        <div class="cont w-full h-full flex flex-col"></div>
+
+        <div class="w-full py-6 my-10 text-center">
+          <a href="#" target="_blank">
+            <button
+              class="group relative inline-flex items-center justify-center overflow-hidden bg-[var(--extra)] backdrop-blur-lg px-8 py-4 font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md rounded-3xl"
+            >
+              <span>🖥️ View more</span>
+              <div
+                class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-13deg)_translateX(100%)]"
+              >
+                <div class="relative h-full w-6 bg-white/20"></div>
+              </div>
+            </button>
+          </a>
         </div>
       </section>
-      <section
-        class="w-full h-screen bg-[var(--sec)] flex justify-center items-center"
+      <footer class="bg-white md:rounded-tl-[30%] md:rounded-tr-[30%] rounded-tl-[10%] rounded-tr-[10%]">
+        <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-[var(--pri)] sm:text-5xl">
+                    Let's Build Something Amazing Together
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-sm text-[var(--extra)] font-bold font-[thinR]">
+                    Passionate about creating innovative web solutions. Let's collaborate and bring ideas to life!
+                </p>
+
+                
+                <button
+      type="submit"
+      class="relative flex justify-center gap-2 mt-14 text-white items-center mx-auto shadow-xl text-lg bg-gray-700 backdrop-blur-md lg:font-semibold border-gray-700 overflow-hidden border-2 rounded-full group px-6 py-3 transition-all duration-300 ease-in-out hover:bg-emerald-500 hover:border-emerald-500"
+    >
+      Connect
+      <svg
+        class="w-6 h-6 transition-transform transform group-hover:rotate-90"
+        viewBox="0 0 16 19"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div class="text-5xl text-[var(--pri)]">Contact</div>
-      </section>
+        <circle
+          cx="8" cy="9" r="2"
+          class="fill-white transition-opacity group-hover:opacity-0"
+        />
+        <path
+          d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+          class="fill-white opacity-0 transition-opacity group-hover:opacity-100"
+        ></path>
+      </svg>
+    </button>
+
+            </div>
+
+            <div class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24 ">
+                <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+                    <li>
+                        <a href="#about" class="text-gray-500 transition hover:opacity-75">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="text-gray-500 transition hover:opacity-75">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#home" class="text-gray-500 transition hover:opacity-75">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+                    <li>
+                        <a href="https://github.com/yourusername" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20.447 20.452H16.89v-5.569c0-1.327-.026-3.037-1.85-3.037-1.85 0-2.134 1.445-2.134 2.943v5.663h-3.553V9h3.415v1.561h.049c.477-.9 1.636-1.85 3.365-1.85 3.6 0 4.266 2.371 4.266 5.457v6.284zM5.337 7.433c-1.144 0-2.067-.927-2.067-2.07 0-1.144.923-2.07 2.067-2.07 1.144 0 2.07.926 2.07 2.07s-.926 2.07-2.07 2.07zM7.337 20.452H3.336V9h4.001v11.452zM22.225 0H1.771C.791 0 0 .774 0 1.728v20.543C0 23.226.791 24 1.771 24h20.451c.981 0 1.777-.774 1.777-1.728V1.728C24 .774 23.206 0 22.225 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="mt-8 text-center text-gray-500 text-xs">
+                        <p>&copy; 2025 sumeet.codes. All rights reserved.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     </main>
   </body>
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
   <script src="scripts.js"></script>
 </html>

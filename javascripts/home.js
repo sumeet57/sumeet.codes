@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Smooth animation with GPU acceleration
     const t1 = gsap.timeline();
 
-    t1.from(text1, { duration: 1, y: -500, opacity: 0, ease: "power2.out" });
+    t1.from(text1, { duration: 1, y: -800, opacity: 0, ease: "power2.out" });
     // t1.from(text3, { duration: 1, x: 0, opacity:1, ease: "power2.out" });
-    t1.from(text2, { duration: 1, y: -100, opacity: 0, ease: "power2.out" });
+    t1.from(text2, { duration: 1, y: -200, opacity: 0, ease: "power2.out" });
 
 
 });

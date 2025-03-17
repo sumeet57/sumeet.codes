@@ -2,11 +2,17 @@
     background: var(--homepageBg);
     color: var(--sec);
     z-index: 1;
+    font-family: contentR;
+}
+
+#home button{
+    font-family: contentR;
 }
 
 #home h1{
     font-size: var(--textH);
     transition: all linear 0.5s;
+    font-weight: 100;
 }
 #home h3{
     font-size: var(--textL);
@@ -22,7 +28,7 @@
 
 #home .extracont .profile-card{
     font-family: thinR;
-    background-color: var(--sec);
+    /* background-color: var(--pri); */
     color: var(--pri);
 }
 #home .extracont .profile-card h2{
@@ -46,20 +52,8 @@
     display: inline-block;
 }
 
-@media (max-width: 768px){
-    :root{
-        --textH: 10vw;
-        --textR: 1.2rem;
-        --textL: 3vw;
-    }
-}
 
 @media (max-width: 480px){
-    :root{
-        --textH: 15vw;
-        --textR: 1rem;
-        --textL: 4vw;
-    }
     #home{
         padding: 5px;
     }

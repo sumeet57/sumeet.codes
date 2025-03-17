@@ -1,31 +1,52 @@
-:root{
---pri : #09090B;
---sec : #E5E5E5;
---extra : #F97316;
---homepageBg : linear-gradient(to bottom, #252525, #09090B);
+:root {
+  --pri: #09090b;
+  --sec: #e5e5e5;
+  --extra: #f97316;
+  --extraD: #ff9a52;
+  --homepageBg: linear-gradient(to bottom, #1b1b1b, #09090b);
 
-/* text  */
---textH : 6vw;
---textSH : 4vw;
---textR : 2vw;
---textL : 1.5vw;
-};
+  /* text  */
 
-@font-face {
-    font-family: 'contentR';
-    src: url(./font/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: 'thinR';
-    src: url(./font/PoiretOne-Regular.ttf);
+  --textAbout: 10vw;
+
+  --textH: 6vw;
+  --textSH: 4vw;
+  --textR: 2vw;
+  --textL: 1.5vw;
 }
 
-html,body{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    box-sizing: border-box;
-    font-family: 'contentR';
-    background-color: var(--pri);
-    color: var(--sec);
+@font-face {
+  font-family: "contentR";
+  src: url(./font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "thinR";
+  src: url(./font/PoiretOne-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "contentR";
+  background-color: var(--pri);
+  color: var(--sec);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --textH: 10vw;
+    --textR: 3vw;
+    --textL: 3.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --textH: 15vw;
+    --textR: 5vw;
+    --textL: 4vw;
+  }
 }
