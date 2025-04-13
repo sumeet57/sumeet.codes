@@ -5,29 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Tambola",
             context: "An online multiplayer tambola game using MERN, played by 200+ users in real-time.",
-            codelink: "https://google.com",
-            weblink: "https://google.com",
+            codelink: "https://github.com/sumeet57/Tambola",
+            weblink: "https://tambolatesting.vercel.app/",
             icon: "🎲"
         },
         {
-            title: "Weather App",
-            context: "A weather forecasting app using OpenWeather API and vanilla JavaScript.",
-            codelink: "https://example.com/weather-code",
-            weblink: "https://example.com/weather-app",
-            icon: "🌦️"
+            title: "Job Board",
+            context: "A platform for recruiter and freelancer/seeking jobs.",
+            codelink: "https://github.com/sumeet57/JobBoard-MERN",
+            weblink: "https://github.com/sumeet57/JobBoard-MERN",
+            icon: "🏢"
         },
         {
-            title: "Task Manager",
-            context: "A task management tool built with React and Firebase for real-time updates.",
-            codelink: "https://example.com/task-code",
-            weblink: "https://example.com/task-app",
+            title: "Craving Book",
+            context: "A website for explore recipes by name, ingredients, type, or nationality",
+            codelink: "https://github.com/sumeet57/craving-book",
+            weblink: "https://cravingbook.vercel.app/",
             icon: "✅"
         },
         {
             title: "Portfolio Website",
             context: "A personal portfolio website showcasing projects and skills.",
-            codelink: "https://example.com/portfolio-code",
-            weblink: "https://example.com/portfolio-site",
+            codelink: "https://www.sumeet.codes/",
+            weblink: "https://www.sumeet.codes/",
             icon: "🌐"
         },
         
